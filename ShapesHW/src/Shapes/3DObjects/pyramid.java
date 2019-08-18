@@ -1,0 +1,6 @@
+/**
+ * pyramid
+ */
+public class pyramid {
+
+}

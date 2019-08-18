@@ -1,0 +1,6 @@
+/**
+ * square
+ */
+public class square {
+
+}

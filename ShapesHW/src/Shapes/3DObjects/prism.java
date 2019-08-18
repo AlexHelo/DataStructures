@@ -1,0 +1,6 @@
+/**
+ * prism
+ */
+public class prism {
+
+}

@@ -1,0 +1,6 @@
+/**
+ * triangle
+ */
+public class triangle {
+
+}
