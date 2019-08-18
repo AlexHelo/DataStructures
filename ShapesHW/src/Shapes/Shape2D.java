@@ -3,6 +3,10 @@ package Shapes;
 /**
  * Shape2D
  */
-public class Shape2D {
+public abstract class Shape2D implements ShapeInterface {
+    private String name;
 
+    Shape2D(String name) {
+        this.name = name;
+    }
 }

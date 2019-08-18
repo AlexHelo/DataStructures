@@ -3,6 +3,8 @@ package Shapes;
 /**
  * ShapeInterface
  */
-public class ShapeInterface {
+public interface ShapeInterface {
+    public void getArea();
 
+    public void getPerimeter();
 }
