@@ -21,13 +21,11 @@ public class circle extends Shape2D {
     }
     public void CalcArea(double radius){
         area=Math.PI*radius*radius;
-        this.area=area;
     }
     public double getPerimeter() {
         return perimeter;
     }
     public void CalcPerimeter(double radius){
         perimeter=Math.PI*radius;
-        this.perimeter=perimeter;
     }
 }
