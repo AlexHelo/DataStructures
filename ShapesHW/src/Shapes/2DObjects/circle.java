@@ -1,6 +1,0 @@
-/**
- * circle
- */
-public class circle {
-
-}

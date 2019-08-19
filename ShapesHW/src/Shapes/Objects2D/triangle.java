@@ -1,3 +1,5 @@
+package Shapes.Objects2D;
+
 /**
  * triangle
  */
