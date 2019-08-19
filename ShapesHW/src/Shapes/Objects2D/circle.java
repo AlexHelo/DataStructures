@@ -16,16 +16,12 @@ public class circle extends Shape2D {
         this.radius=radius;
     }
 
-    public double getArea() {
+    public double CalcArea(double radius){
+        area=Math.PI*radius*radius;
         return area;
     }
-    public void CalcArea(double radius){
-        area=Math.PI*radius*radius;
-    }
-    public double getPerimeter() {
-        return perimeter;
-    }
-    public void CalcPerimeter(double radius){
+    public double CalcPerimeter(double radius){
         perimeter=Math.PI*radius;
+        return perimeter;
     }
 }

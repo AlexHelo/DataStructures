@@ -14,18 +14,12 @@ public class square extends Shape2D {
         super("Square");
         this.side=side;
     }
-
-    public double getArea() {
+    public double calcArea(double side){
+        area=side*side;
         return area;
     }
-    public void calcArea(double side){
-        area=side*side;
-    }
-
-    public double getPerimeter() {
-        return perimeter;
-    }
-    public void calcPerimeter(double side){
+    public double calcPerimeter(double side){
         perimeter=4*perimeter;
+        return perimeter;
     }
 }

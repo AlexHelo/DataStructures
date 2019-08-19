@@ -20,8 +20,8 @@ public abstract class triangle extends Shape2D {
     public double getArea() {
         return area;
     }
-
-    public double getPerimeter() {
+    public double CalcPerimeter(double sideA double sideB double sideC){
+        perimeter=(sideA+sideB+sideC);
         return perimeter;
     }
 }
