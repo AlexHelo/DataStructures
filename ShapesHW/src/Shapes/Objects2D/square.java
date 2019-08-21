@@ -19,7 +19,7 @@ public class square extends Shape2D {
         return area;
     }
     public double calcPerimeter(double side){
-        perimeter=4*perimeter;
+        perimeter=4*side;
         return perimeter;
     }
 }

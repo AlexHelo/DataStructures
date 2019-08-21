@@ -8,7 +8,8 @@ import Shapes.Shape2D;
 public class polygon extends Shape2D {
 
     double side;
-    double height;
+    double apothem;
+    double numOfSides;
     double area;
     double perimeter;
 
@@ -17,10 +18,12 @@ public class polygon extends Shape2D {
     }
 
     public double getArea() {
+        area=((numOfSides*side*apothem)/2);
         return area;
     }
 
     public double getPerimeter() {
+        perimeter=side*numOfSides;
         return perimeter;
     }
 

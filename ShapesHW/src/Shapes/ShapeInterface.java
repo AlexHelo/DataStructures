@@ -4,7 +4,7 @@ package Shapes;
  * ShapeInterface
  */
 public interface ShapeInterface {
-    public double getArea();
+    public double CalcArea();
 
-    public double getPerimeter();
+    public double CalcPerimeter();
 }
