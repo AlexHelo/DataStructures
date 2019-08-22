@@ -39,7 +39,7 @@ public class cube extends Shape3D {
 
     @Override
     public double getVolume() {
-        volume = side * 3;
+        volume = side * side * side;
         return volume;
     }
 }
