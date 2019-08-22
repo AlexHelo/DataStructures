@@ -63,6 +63,27 @@ public class Shape3D implements ShapeInterface {
     }
 
     public void calculate(Shape3D shape, Scanner sc) {
+        System.out.println("What do you want to calculate?" + "\n" + "1)Area" + "\n" + "2)Perimeter" + "\n" + "3)Volume"
+                + "\n" + "4)Exit");
+        int choice = sc.nextInt();
+        switch (choice) {
+        case 1:
+            System.out.println(Shape.getArea());
+            break;
+        case 2:
+            System.out.print(Shape.getPerimeter());
+            break;
+        case 3:
+            System.out.print(Shape.getVolume());
+            break;
+        case 4:
+            System.exit(0);
+            break;
 
+        default:
+            System.out.println("Option not found, try again");
+            this.calculate(shape, sc);
+            break;
+        }
     }
 }

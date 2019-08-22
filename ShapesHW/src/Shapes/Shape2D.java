@@ -8,11 +8,11 @@ import Shapes.Objects2D.*;
  * Shape2D
  */
 public class Shape2D implements ShapeInterface {
-    private String name;
+
     private Shape2D Shape;
 
     public Shape2D(String name) {
-        this.name = name;
+
     }
 
     // Added methods because of the implementation, the class could be abstract to
@@ -66,6 +66,23 @@ public class Shape2D implements ShapeInterface {
     }
 
     public void calculate(Shape2D shape, Scanner sc) {
+        System.out.println("What do you want to calculate?" + "\n" + "1)Area" + "\n" + "2)Perimeter" + "\n" + "3)Exit");
+        int choice = sc.nextInt();
+        switch (choice) {
+        case 1:
+            System.out.print(Shape.getArea());
+            break;
+        case 2:
+            System.out.print(Shape.getPerimeter());
+            break;
+        case 3:
+            System.exit(0);
+            break;
 
+        default:
+            System.out.println("Option not found, try again");
+            this.calculate(shape, sc);
+            break;
+        }
     }
 }

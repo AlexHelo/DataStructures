@@ -24,7 +24,7 @@ public class triangle extends Shape2D {
     }
 
     public static triangle getQuestions(Scanner sc) {
-        System.out.println("What's the sphere's radius");
+        System.out.println("What's the first side of the rieangle radius");
         double radius = sc.nextDouble();
         return new triangle();
     }
