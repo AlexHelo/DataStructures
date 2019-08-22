@@ -1,5 +1,7 @@
 package Shapes.Objects2D;
 
+import java.util.Scanner;
+
 import Shapes.Shape2D;
 
 /**
@@ -15,6 +17,12 @@ public class polygon extends Shape2D {
 
     public polygon() {
         super("Polygon");
+    }
+
+    public static circle getQuestions(Scanner sc) {
+        System.out.println("What's the sphere's radius");
+        double radius = sc.nextDouble();
+        return new circle(radius);
     }
 
     @Override

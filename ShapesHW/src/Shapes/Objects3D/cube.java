@@ -18,9 +18,9 @@ public class cube extends Shape3D {
         this.side = side;
     }
 
-    public cube getQuestions() {
+    public static cube getQuestions(Scanner sc) {
         System.out.println("How long is the cube's side?");
-        side = sc.nextDouble();
+        double side = sc.nextDouble();
         return new cube(side);
     }
 

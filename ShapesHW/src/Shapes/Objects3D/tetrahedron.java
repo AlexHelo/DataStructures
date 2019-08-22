@@ -21,9 +21,9 @@ public class tetrahedron extends Shape3D {
 
     }
 
-    public tetrahedron getQuestions() {
+    public static tetrahedron getQuestions(Scanner sc) {
         System.out.println("How long is the side of the tetrahedron?");
-        side = sc.nextDouble();
+        double side = sc.nextDouble();
         return new tetrahedron(side);
     }
 

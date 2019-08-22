@@ -22,7 +22,7 @@ public class Main {
                 break;
             case 2:
                 Shape3D sp3 = new Shape3D("Unamed 3D Shape");
-                sp3.selection();
+                sp3.selection(sc);
                 break;
             case 3:
                 run = false;

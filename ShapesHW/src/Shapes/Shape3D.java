@@ -1,10 +1,15 @@
 package Shapes;
 
+import java.util.Scanner;
+
+import Shapes.Objects3D.*;
+
 /**
- * Shape3D
+ * Shape2D
  */
 public class Shape3D implements ShapeInterface {
     private String name;
+    private Shape3D Shape;
 
     public Shape3D(String name) {
         this.name = name;
@@ -12,7 +17,7 @@ public class Shape3D implements ShapeInterface {
 
     // Added methods because of the implementation, the class could be abstract to
     // avoid this, however, we need to instance it to be able to print the different
-    // lists instead of having a giant switch statement in Main.
+    // list instead of having a giant switch statement in Main.
     @Override
     public double getArea() {
         return 0;
@@ -28,8 +33,36 @@ public class Shape3D implements ShapeInterface {
         return 0;
     }
 
-    public void selection() {
-        System.out.println("3dYEAH");
+    public void selection(Scanner sc) {
+        System.out.println("What type of shape do you want?" + "\n" + "1)Cube" + "\n" + "2)Sphere" + "\n"
+                + "3)Tetrahedron" + "\n" + "4)Exit");
+        int choice = sc.nextInt();
+        switch (choice) {
+        case 1:
+            Shape = cube.getQuestions(sc);
+            this.calculate(Shape, sc);
+            break;
+        case 2:
+            Shape = sphere.getQuestions(sc);
+            this.calculate(Shape, sc);
+            break;
+        case 3:
+            Shape = tetrahedron.getQuestions(sc);
+            this.calculate(Shape, sc);
+            break;
+
+        case 4:
+            System.exit(0);
+            break;
+
+        default:
+            System.out.println("Option not found, try again");
+            this.selection(sc);
+            break;
+        }
     }
 
+    public void calculate(Shape3D shape, Scanner sc) {
+
+    }
 }

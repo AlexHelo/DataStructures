@@ -20,8 +20,7 @@ public class sphere extends Shape3D {
         this.radius = radius;
     }
 
-    public static sphere getQuestions() {
-        Scanner sc = new Scanner(System.in);
+    public static sphere getQuestions(Scanner sc) {
         System.out.println("What's the sphere's radius");
         double radius = sc.nextDouble();
         return new sphere(radius);

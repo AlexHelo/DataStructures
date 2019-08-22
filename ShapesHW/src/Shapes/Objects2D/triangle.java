@@ -1,11 +1,13 @@
 package Shapes.Objects2D;
 
+import java.util.Scanner;
+
 import Shapes.Shape2D;
 
 /**
  * triangle
  */
-public abstract class triangle extends Shape2D {
+public class triangle extends Shape2D {
     double sideA;
     double sideB;
     double sideC;
@@ -19,6 +21,12 @@ public abstract class triangle extends Shape2D {
 
     public void askQuestion() {
 
+    }
+
+    public static triangle getQuestions(Scanner sc) {
+        System.out.println("What's the sphere's radius");
+        double radius = sc.nextDouble();
+        return new triangle();
     }
 
     @Override
