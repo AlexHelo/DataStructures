@@ -24,17 +24,20 @@ public class cube extends Shape3D {
         return new cube(side);
     }
 
+    @Override
     public double getArea() {
         area = side * side * 6;
         return area;
     }
 
+    @Override
     public double getPerimeter() {
         perimeter = side * 12;
 
         return perimeter;
     }
 
+    @Override
     public double getVolume() {
         volume = side * 3;
         return volume;

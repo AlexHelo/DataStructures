@@ -15,13 +15,20 @@ public class square extends Shape2D {
         this.side = side;
     }
 
-    public double getArea(double side) {
+    @Override
+    public double getArea() {
         area = side * side;
         return area;
     }
 
-    public double calcPerimeter(double side) {
+    @Override
+    public double getPerimeter() {
         perimeter = 4 * side;
         return perimeter;
+    }
+
+    @Override
+    public double getVolume() {
+        return 0;
     }
 }

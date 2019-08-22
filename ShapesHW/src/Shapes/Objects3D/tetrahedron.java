@@ -27,16 +27,19 @@ public class tetrahedron extends Shape3D {
         return new tetrahedron(side);
     }
 
+    @Override
     public double getArea() {
         area = 1.732 * (side * side);
         return area;
     }
 
+    @Override
     public double getPerimeter() {
         perimeter = side * 6;
         return perimeter;
     }
 
+    @Override
     public double getVolume() {
         volume = ((side * side * side) / (8.485));
         return volume;

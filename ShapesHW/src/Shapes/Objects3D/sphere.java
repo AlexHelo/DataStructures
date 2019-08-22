@@ -20,23 +20,27 @@ public class sphere extends Shape3D {
         this.radius = radius;
     }
 
-    public sphere getQuestions() {
+    public static sphere getQuestions() {
+        Scanner sc = new Scanner(System.in);
         System.out.println("What's the sphere's radius");
-        radius = sc.nextDouble();
+        double radius = sc.nextDouble();
         return new sphere(radius);
     }
 
+    @Override
     public double getArea() {
         area = 12.566 * (area * area);
         return area;
     }
 
+    @Override
     public double getPerimeter() {
         perimeter = 0;
         // Spheres don't have a perimeter
         return perimeter;
     }
 
+    @Override
     public double getVolume() {
         volume = 4.189 * (radius * radius * radius);
         return volume;

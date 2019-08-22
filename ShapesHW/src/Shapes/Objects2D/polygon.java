@@ -17,14 +17,21 @@ public class polygon extends Shape2D {
         super("Polygon");
     }
 
+    @Override
     public double getArea() {
-        area=((numOfSides*side*apothem)/2);
+        area = ((numOfSides * side * apothem) / 2);
         return area;
     }
 
+    @Override
     public double getPerimeter() {
-        perimeter=side*numOfSides;
+        perimeter = side * numOfSides;
         return perimeter;
+    }
+
+    @Override
+    public double getVolume() {
+        return 0;
     }
 
 }

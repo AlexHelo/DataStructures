@@ -16,15 +16,25 @@ public abstract class triangle extends Shape2D {
     public triangle() {
         super("Triangle");
     }
-    public void askQuestion(){
-        
+
+    public void askQuestion() {
+
     }
+
+    @Override
     public double getArea() {
-        area=(sideC*height)/2;
+        area = (sideC * height) / 2;
         return area;
     }
-    public double CalcPerimeter(double sideA double sideB double sideC){
-        perimeter=(sideA+sideB+sideC);
+
+    @Override
+    public double getPerimeter() {
+        perimeter = (sideA + sideB + sideC);
         return perimeter;
+    }
+
+    @Override
+    public double getVolume() {
+        return 0;
     }
 }
