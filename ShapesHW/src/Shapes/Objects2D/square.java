@@ -17,10 +17,10 @@ public class square extends Shape2D {
         this.side = side;
     }
 
-    public static circle getQuestions(Scanner sc) {
-        System.out.println("What's the sphere's radius");
-        double radius = sc.nextDouble();
-        return new circle(radius);
+    public static square getQuestions(Scanner sc) {
+        System.out.println("What's the legth of the side?");
+        double side = sc.nextDouble();
+        return new square(side);
     }
 
     @Override

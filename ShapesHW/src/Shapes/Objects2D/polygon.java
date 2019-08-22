@@ -15,14 +15,21 @@ public class polygon extends Shape2D {
     double area;
     double perimeter;
 
-    public polygon() {
+    public polygon(double numOfSides, double side, double apothem) {
         super("Polygon");
+        this.numOfSides = numOfSides;
+        this.side = side;
+        this.apothem = apothem;
     }
 
-    public static circle getQuestions(Scanner sc) {
-        System.out.println("What's the sphere's radius");
-        double radius = sc.nextDouble();
-        return new circle(radius);
+    public static polygon getQuestions(Scanner sc) {
+        System.out.println("What's the number of sides?");
+        double numOfSides = sc.nextDouble();
+        System.out.println("What's the length of the side");
+        double side = sc.nextDouble();
+        System.out.println("What's the apothem?");
+        double apothem = sc.nextDouble();
+        return new polygon(numOfSides, side, apothem);
     }
 
     @Override
