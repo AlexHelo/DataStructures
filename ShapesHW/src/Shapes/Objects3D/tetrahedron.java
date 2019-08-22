@@ -1,0 +1,44 @@
+package Shapes.Objects3D;
+
+import java.util.Scanner;
+
+import Shapes.Shape3D;
+
+/**
+ * tetrahedron
+ */
+public class tetrahedron extends Shape3D {
+    double side;
+    double area;
+    double volume;
+    double perimeter;
+
+    Scanner sc = new Scanner(System.in);
+
+    public tetrahedron(double side) {
+        super("tetrahedron");
+        this.side = side;
+
+    }
+
+    public tetrahedron getQuestions() {
+        System.out.println("How long is the side of the tetrahedron?");
+        side = sc.nextDouble();
+        return new tetrahedron(side);
+    }
+
+    public double getArea() {
+        area = 1.732 * (side * side);
+        return area;
+    }
+
+    public double getPerimeter() {
+        perimeter = side * 6;
+        return perimeter;
+    }
+
+    public double getVolume() {
+        volume = ((side * side * side) / (8.485));
+        return volume;
+    }
+}

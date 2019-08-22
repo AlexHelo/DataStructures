@@ -13,15 +13,19 @@ public class circle extends Shape2D {
 
     public circle(double radius) {
         super("Circle");
-        this.radius=radius;
+        this.radius = radius;
     }
 
-    public double CalcArea(double radius){
-        area=Math.PI*radius*radius;
+    @Override
+    public double getArea() {
+        area = Math.PI * radius * radius;
         return area;
     }
-    public double CalcPerimeter(double radius){
-        perimeter=Math.PI*radius;
+
+    @Override
+    public double getPerimeter() {
+        perimeter = Math.PI * radius;
         return perimeter;
     }
+
 }

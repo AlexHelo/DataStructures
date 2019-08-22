@@ -12,14 +12,16 @@ public class square extends Shape2D {
 
     public square(double side) {
         super("Square");
-        this.side=side;
+        this.side = side;
     }
-    public double calcArea(double side){
-        area=side*side;
+
+    public double getArea(double side) {
+        area = side * side;
         return area;
     }
-    public double calcPerimeter(double side){
-        perimeter=4*perimeter;
+
+    public double getPerimeter(double side) {
+        perimeter = 4 * perimeter;
         return perimeter;
     }
 }
