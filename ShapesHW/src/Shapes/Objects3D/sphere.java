@@ -26,7 +26,7 @@ public class sphere extends Shape3D {
 
     @Override
     public double getArea() {
-        area = 12.566 * (area * area);
+        area = 12.566 * (radius * radius);
         return area;
     }
 
