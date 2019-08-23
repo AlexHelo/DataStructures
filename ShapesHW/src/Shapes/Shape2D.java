@@ -8,11 +8,11 @@ import Shapes.Objects2D.*;
  * Shape2D
  */
 public class Shape2D implements ShapeInterface {
-
+    private String name;
     private Shape2D Shape;
 
     public Shape2D(String name) {
-
+        this.name = name;
     }
 
     // Added methods because of the implementation, the class could be abstract to

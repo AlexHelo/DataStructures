@@ -8,10 +8,10 @@ import Shapes.Shape3D;
  * tetrahedron
  */
 public class tetrahedron extends Shape3D {
-    double side;
-    double area;
-    double volume;
-    double perimeter;
+    private double side;
+    private double area;
+    private double volume;
+    private double perimeter;
 
     Scanner sc = new Scanner(System.in);
 

@@ -8,12 +8,10 @@ import Shapes.Shape3D;
  * sphere
  */
 public class sphere extends Shape3D {
-    double radius;
-    double area;
-    double volume;
-    double perimeter;
-
-    Scanner sc = new Scanner(System.in);
+    private double radius;
+    private double area;
+    private double volume;
+    private double perimeter;
 
     public sphere(double radius) {
         super("Sphere");

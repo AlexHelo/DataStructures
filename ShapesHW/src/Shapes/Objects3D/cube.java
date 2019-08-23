@@ -7,11 +7,10 @@ import Shapes.Shape3D;
  * prism
  */
 public class cube extends Shape3D {
-    double side;
-    double area;
-    double volume;
-    double perimeter;
-    Scanner sc = new Scanner(System.in);
+    private double side;
+    private double area;
+    private double volume;
+    private double perimeter;
 
     public cube(double side) {
         super("Cube");

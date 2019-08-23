@@ -8,22 +8,19 @@ import Shapes.Shape2D;
  * triangle
  */
 public class triangle extends Shape2D {
-    double sideA;
-    double sideB;
-    double sideC;
-    double height;
-    double area;
-    double perimeter;
+    private double sideA;
+    private double sideB;
+    private double sideC;
+    private double height;
+    private double area;
+    private double perimeter;
 
-    public triangle(double sideA, double sideB, double sideC) {
+    public triangle(double sideA, double sideB, double sideC, double height) {
         super("Triangle");
         this.sideA = sideA;
         this.sideB = sideB;
         this.sideC = sideC;
-    }
-
-    public void askQuestion() {
-
+        this.height = height;
     }
 
     public static triangle getQuestions(Scanner sc) {
@@ -32,9 +29,11 @@ public class triangle extends Shape2D {
         System.out.println("What's the second side of the triangle?");
         double sideB = sc.nextDouble();
         System.out.println("What's the third side of the triangle?");
-
         double sideC = sc.nextDouble();
-        return new triangle(sideA, sideB, sideC);
+        System.out.println("What's the height of the triangle?");
+        double height = sc.nextDouble();
+        return new triangle(sideA, sideB, sideC, height);
+
     }
 
     @Override
