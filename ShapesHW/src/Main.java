@@ -1,4 +1,4 @@
-2import Shapes.*;
+import Shapes.*;
 import java.util.Scanner;
 
 /**
