@@ -3,9 +3,9 @@ public class Student {
 
     private String Name;
     private String ID;
-    private float Grade;
+    private double Grade;
 
-    public Student() {
+    public Student(String Name, String ID, double Grade) {
 
         this.Name = Name;
         this.ID = ID;
@@ -17,15 +17,7 @@ public class Student {
     }
 
     public void setName(String name) {
-        Name = name;
-    }
-
-    public float getGrade() {
-        return Grade;
-    }
-
-    public void setGrade(float grade) {
-        Grade = grade;
+        this.Name = name;
     }
 
     public String getID() {
@@ -33,7 +25,19 @@ public class Student {
     }
 
     public void setID(String iD) {
-        ID = iD;
+        this.ID = iD;
+    }
+
+    public double getGrade() {
+        return Grade;
+    }
+
+    public void setGrade(double grade) {
+        this.Grade = grade;
+    }
+
+    public String format() {
+        return getName() + " " + getID() + " | Grade: " + getGrade() + "\n";
     }
 
 }
